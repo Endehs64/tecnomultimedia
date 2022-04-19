@@ -5,11 +5,6 @@ void setup () {
 }
 void draw() {
   
-  println("x:");
-  println(mouseX);
-  println("y:");
-  println(mouseY);
-  
    //Letras
   strokeWeight(20);
   fill(183, 139, 100);
