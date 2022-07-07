@@ -3,12 +3,9 @@ int x = 100;
 int y = 260;
 int w = 200;
 int h = 300;
-PImage ins, bottle;
+PImage ins;
 PFont intro;
 int poX=400;
-int valaX, valaY;
-int[] botellas = new int [2];
-int[] valores = new int [2];
 
 
 void setup() {
@@ -19,23 +16,12 @@ void setup() {
   //carga imagenes y tipografia
   ins = loadImage("instrucciones.png");
   intro= createFont("Orbitron.ttf", 12);
-  bottle = loadImage ("bottle_00.png");
-
-  //Declarion de FOR
-  for (int n = 0; n<valores.length; n++ ) {
-    valores[n] = 0;
-    botellas[n] = 0;
-  }
-  //Declaracion FLOAT
-  valaX = 400 ;
-  valaY = 400 ;
+  
 }
 
 void draw() {
 
   background(149, 219, 206);
-  valaX += 600 ;
-  valaY += 600 ;
 
   //pantallas
   if (pantalla==1) {            //si pantalla es 1, ejecuta la primera pantalla y el botón
