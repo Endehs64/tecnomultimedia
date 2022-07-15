@@ -60,7 +60,6 @@ void draw() {
     texto("Presiona [R] para", 16, 110, 560, 255);
     texto("volver al inicio", 16, 120, 590, 255);
   }
-  t++;
   if (t >= 1500 ) {
     estado = "perder" ;
     background(235, 99, 107);
