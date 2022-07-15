@@ -3,7 +3,7 @@ int x = 120, y= 420, w = 160, h = 100, yA= 560, hA = 60, yB= 650, hB = 100;
 PImage lira; //note;
 PFont intro;
 String estado;
-int NotasTocadas= 0, puntaje= 250, t;
+int NotasTocadas= 0, puntaje= 150, t=0;
 PImage [] notas = new PImage[4];
 
 void setup() {
@@ -12,7 +12,6 @@ void setup() {
   notas[1] = loadImage ("nota1.png");
   notas[2] = loadImage ("nota2.png");
   notas[3] = loadImage ("nota3.png");
-
   estado = "inicio";
   pantalla=1;              //pantalla arranca en 1 apenas cargas el programa.
 
@@ -60,7 +59,7 @@ void draw() {
     texto("Presiona [R] para", 16, 110, 560, 255);
     texto("volver al inicio", 16, 120, 590, 255);
   }
-  if (t >= 1500 ) {
+  if (t >= 1000 ) {
     estado = "perder" ;
     background(235, 99, 107);
     textFont(intro);
