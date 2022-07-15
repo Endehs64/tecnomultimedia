@@ -1,3 +1,4 @@
+//https://www.youtube.com/watch?v=FBT00XibuzU
 float pantalla, noteX, noteXA, noteXB, noteXC, noteY;
 int x = 120, y= 420, w = 160, h = 100, yA= 560, hA = 60, yB= 650, hB = 100;
 PImage lira; //note;
