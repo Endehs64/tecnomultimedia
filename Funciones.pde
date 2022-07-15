@@ -7,6 +7,7 @@ void pantalla1() {
 }
 
 void pantalla2() {
+  t++;
   textFont(intro);
   texto("Tiempo: "+ t + "/1500", 16, 20, 20, 255);
   texto("Puntos: "+ NotasTocadas+ "/250", 16, 200, 20, 255);
