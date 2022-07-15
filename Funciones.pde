@@ -9,8 +9,8 @@ void pantalla1() {
 void pantalla2() {
   t++;
   textFont(intro);
-  texto("Tiempo: "+ t + "/1500", 16, 20, 20, 255);
-  texto("Puntos: "+ NotasTocadas+ "/250", 16, 200, 20, 255);
+  texto("Tiempo: "+ t + "/1000", 16, 20, 20, 255);
+  texto("Puntos: "+ NotasTocadas+ "/150", 16, 200, 20, 255);
   image(lira, mouseX, 700, 130, 130);
 
   if (noteY>height) {
@@ -93,7 +93,7 @@ void texto(String texto, float tam, float xi, float yu, float ehe) {
 }
 void reinicio() {
   NotasTocadas= 0; 
-  t= 0;
+  t=0;
   noteX = 0;
   noteY = 0;
   noteXA= 0;
