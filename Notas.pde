@@ -30,7 +30,7 @@ class notas {
     } else {
       noteY+=5;
     }
-    image(notas[0], noteX, noteY*2, 40, 40 );
+    image(notas[0], noteX, noteY*4, 40, 40 );
     image(notas[1], noteXA, noteY*3, 40, 40 );
     image(notas[2], noteXB, noteY, 40, 40 );
     image(notas[3], noteXC+10, noteY*2, 40, 40 );
