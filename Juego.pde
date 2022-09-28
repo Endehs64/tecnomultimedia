@@ -3,10 +3,9 @@ class juego {
   ventanas mn;
 
   juego() {
-
-    n= new notas();
+    n= new notas(); 
     mn =new ventanas();
-    
+ 
   }
   void menuimg() {
     mn.pantalla1();
@@ -21,7 +20,7 @@ class juego {
   void iniciar() {
     mn.pantalla2();
     n.move();
-    
+    n.colision();
     mn.estados();
   }
   void reciclar() {
