@@ -1,13 +1,12 @@
 class juego {
-  notas n, ns;
-  ventanas mn, ms;
+  notas n;
+  ventanas mn;
 
   juego() {
 
     n= new notas();
-    ns= new notas();
     mn =new ventanas();
-    ms =new ventanas();
+    
   }
   void menuimg() {
     mn.pantalla1();
@@ -22,8 +21,8 @@ class juego {
   void iniciar() {
     mn.pantalla2();
     n.move();
-    ns.colision();
-    ms.estados();
+    
+    mn.estados();
   }
   void reciclar() {
     x = 120;
@@ -34,7 +33,7 @@ class juego {
     hA = 60; 
     yB= 650; 
     hB = 100;
-    ms.reiniciopan();
-    ns.reinicionotas();
+    mn.reiniciopan();
+    n.reinicionotas();
   }
 }
