@@ -1,7 +1,7 @@
 class notas {
 
-
   //Propiedades
+
   String estado = "inicio";
   PFont intro = createFont("Orbitron.ttf", 12);
   PImage lira; 
@@ -17,6 +17,9 @@ class notas {
     notas[2] = loadImage ("nota2.png");
     notas[3] = loadImage ("nota3.png");
   }
+
+  //Metodos
+
   void move() {
     lira = loadImage ("lira.png");
     image(lira, mouseX, 700, 130, 130);
@@ -36,7 +39,7 @@ class notas {
     image(notas[3], noteXC+10, noteY*2, 40, 40 );
   }
 
-  //Metodos
+
   void colision() {
 
     texto("Puntos: "+ NotasTocadas+ "/150", 16, 200, 20, 255);
