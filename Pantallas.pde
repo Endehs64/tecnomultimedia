@@ -1,11 +1,17 @@
-class ventanas {
+class pantallas {
+
+  //Propiedades
 
   String estado = "inicio";
   int puntaje= 150, t=0;
   PFont intro = createFont("Orbitron.ttf", 12);
 
-  ventanas() {
+  //Costructor
+
+  pantallas() {
   }
+
+  //Metodos
 
   void pantalla1() {
     PImage a1;
@@ -18,7 +24,6 @@ class ventanas {
     t++;
     textFont(intro);
     texto("Tiempo: "+ t + "/1000", 16, 20, 20, 255);
- 
   }
   void pantalla3() {
     background(149, 219, 206);
