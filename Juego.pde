@@ -1,10 +1,10 @@
 class juego {
   notas n;
-  ventanas mn;
+  pantallas mn;
 
   juego() {
     n= new notas(); 
-    mn =new ventanas();
+    mn =new pantallas();
  
   }
   void menuimg() {
