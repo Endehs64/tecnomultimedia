@@ -64,6 +64,7 @@ class notas {
   void ganar() {
     if ( NotasTocadas >= puntaje ) {
       estado = "ganar";
+      ingame.stop();
       background(149, 219, 206);
       textFont(intro);
       PImage win;
@@ -73,12 +74,6 @@ class notas {
       texto("Presiona [R] para", 16, 110, 560, 255);
       texto("volver al inicio", 16, 120, 590, 255);
     }
-  }
-  
-  void sg(){
-     if ( NotasTocadas >= puntaje ){
-     ingame.stop();
-     }
   }
 
   void texto(String texto, float tam, float xi, float yu, float ehe) {
