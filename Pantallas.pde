@@ -67,6 +67,7 @@ class pantallas {
     //1000
     if (t >= 1000) {
       estado = "perder" ;
+      ingame.stop();
       background(235, 99, 107);
       textFont(intro);
       PImage loser;
@@ -75,14 +76,9 @@ class pantallas {
       texto("Perdiste...", 60, 50, 450, 255);
       texto("Presiona [R] para", 16, 110, 560, 255);
       texto("volver al inicio", 16, 120, 590, 255);
-      
     }
   }
-  void sp(){
-     if (t >= 600){
-     ingame.stop();
-     }
-  }
+
   void reiniciopan() {
     t=0;
   }
