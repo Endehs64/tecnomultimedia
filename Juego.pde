@@ -24,10 +24,10 @@ class juego {
     n.colision();
     n.ganar();
     mn.perder();
-    vent.totalstop();
   }
   void reciclar() {
     pantalla=1;
+    vent.musica();
     x = 120;
     y= 420; 
     w = 160;
@@ -38,19 +38,13 @@ class juego {
     hB = 100;
     mn.reiniciopan();
     n.reinicionotas();
-    ingame.stop();
   }
   void musica() {
     if (pantalla==1) {
+      ingame.stop();
       menu.play();
     }
   }
-
-  void totalstop() {
-    n.sg();
-    mn.sp();
-  }
-
 
   void dibujar() {
     background(149, 219, 206);
